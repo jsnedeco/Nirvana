@@ -8,6 +8,7 @@ namespace Downloader.Utilities
     {
         public static void CheckAvailableDiskSpace(string outputDirectory, long numBytesToDownload)
         {
+            return
             string    absolutePath = GetAbsolutePath(outputDirectory);
             DriveInfo driveInfo    = GetDriveWithLongestCommonPrefix(absolutePath);
 
